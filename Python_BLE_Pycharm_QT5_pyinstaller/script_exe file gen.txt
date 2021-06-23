@@ -1,0 +1,20 @@
+pyinstaller -w -F BLE_SPO2_Python_v5.py
+
+auto-py-to-exe.exe
+
+
+pyinstaller --noconfirm --onedir --windowed --add-data "C:/Users/jgshi/Documents/GitHub/SmartMask/Python_BLE_Pycharm_QT5_pyinstaller/BLE_SPO2_Python.ui;."  "C:/Users/jgshi/Documents/GitHub/SmartMask/Python_BLE_Pycharm_QT5_pyinstaller/BLE_SPO2_Python_v5.py"
+
+
+
+
+pyinstaller --noconfirm --onedir --windowed --log-level "WARN" --debug "all" --add-data "C:/Users/jgshi/Documents/GitHub/SmartMask/Python_BLE_Pycharm_QT5_pyinstaller/BLE_SPO2_Python.ui;."  "C:/Users/jgshi/Documents/GitHub/SmartMask/Python_BLE_Pycharm_QT5_pyinstaller/BLE_SPO2_Python_v6.py"
+
+pyinstaller -w --noconfirm --onedir --windowed --add-data "C:/Users/jgshi/Documents/GitHub/SmartMask/Python_BLE_Pycharm_QT5_pyinstaller/BLE_SPO2_Python.ui;."  "C:/Users/jgshi/Documents/GitHub/SmartMask/Python_BLE_Pycharm_QT5_pyinstaller/BLE_SPO2_Python_v6.py"
+
+
+pyinstaller -w --noconfirm --onedir --windowed  "C:/Users/jgshi/Documents/GitHub/SmartMask/Python_BLE_Pycharm_QT5_pyinstaller/BLE_SPO2_Python_v6.py"
+
+
+pyinstaller --onedir --console BLE_SPO2_Python_v7.py
+pyinstaller --onedir --noconsole BLE_SPO2_Python_v7.py

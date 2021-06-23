@@ -1,0 +1,20 @@
+BLE_notify
+	- Arduino
+	- BLE notify example
+BLE_SPO2_DGMIF
+	- Arduino
+	- BLE+SPO2 operation code
+BLE_SPO2_DGMIF_20210617
+	- Arduino
+	- BLE + SPO2 operation code
+
+
+
+
+
+Python_BLE_Spyder
+	- python code with spyder dev. env.
+Python_BLE_Pycharm_QT5
+	- python code including QT5 based GUI 
+Python_BLE_Pycharm_QT5_pyinstaller
+	- executive file generation directory based on pyinstaller
