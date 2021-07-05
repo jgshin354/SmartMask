@@ -1,0 +1,306 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ESP32 BLE-PPG"
+Date "2021-06-29"
+Rev "1.1"
+Comp "DGMIF"
+Comment1 "Wired Connection between ESP32 and PPG"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR02
+U 1 1 60D94DA1
+P 3150 2500
+F 0 "#PWR02" H 3150 2250 50  0001 C CNN
+F 1 "GND" H 3155 2327 50  0000 C CNN
+F 2 "" H 3150 2500 50  0001 C CNN
+F 3 "" H 3150 2500 50  0001 C CNN
+	1    3150 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3600 1950
+NoConn ~ 3600 2050
+NoConn ~ 3600 2950
+NoConn ~ 3600 3050
+NoConn ~ 3600 3150
+NoConn ~ 3600 3250
+NoConn ~ 3600 3350
+NoConn ~ 3600 3450
+NoConn ~ 4800 1950
+NoConn ~ 4800 2150
+NoConn ~ 4800 2250
+NoConn ~ 4800 2350
+NoConn ~ 4800 2450
+NoConn ~ 4800 2550
+NoConn ~ 4800 2650
+NoConn ~ 4800 2750
+NoConn ~ 4800 2850
+NoConn ~ 4800 2950
+NoConn ~ 4800 3050
+NoConn ~ 4800 4050
+NoConn ~ 4800 3950
+NoConn ~ 4800 3850
+NoConn ~ 4800 3750
+NoConn ~ 4800 3650
+NoConn ~ 4800 3550
+NoConn ~ 4800 3450
+NoConn ~ 4800 3350
+Wire Wire Line
+	4800 1850 5250 1850
+Text Label 4950 1850 0    50   ~ 0
+ESP_TX
+Wire Wire Line
+	4800 2050 5250 2050
+Text Label 4950 2050 0    50   ~ 0
+ESP_RX
+$Comp
+L RF_Module:ESP32-WROOM-32 U1
+U 1 1 60D923F3
+P 4200 2950
+F 0 "U1" H 4200 4700 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 4200 4600 50  0000 C CNN
+F 2 "jgshin_KiCad_lib:ESP32-WROOM-32-Min_keepout" H 4200 1450 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3900 3000 50  0001 C CNN
+	1    4200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 60D96E1D
+P 3150 2400
+F 0 "#PWR01" H 3150 2250 50  0001 C CNN
+F 1 "VCC" H 3165 2573 50  0000 C CNN
+F 2 "" H 3150 2400 50  0001 C CNN
+F 3 "" H 3150 2400 50  0001 C CNN
+	1    3150 2400
+	1    0    0    -1  
+$EndComp
+Text Label 4950 1750 0    50   ~ 0
+ESP_IO0
+Wire Wire Line
+	4800 3150 5250 3150
+Wire Wire Line
+	4800 3250 5250 3250
+Text Label 4950 3250 0    50   ~ 0
+I2C_SCL
+Text Label 4950 3150 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	6950 2150 6450 2150
+Wire Wire Line
+	6950 2050 6450 2050
+Text Label 6500 2150 0    50   ~ 0
+I2C_SDA
+Text Label 6500 2050 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	6450 2850 6900 2850
+Wire Wire Line
+	6450 2750 6900 2750
+Wire Wire Line
+	6450 2650 6900 2650
+Wire Wire Line
+	6450 2550 6900 2550
+Text Label 6600 2550 0    50   ~ 0
+VCC
+Text Label 6600 2850 0    50   ~ 0
+GND
+Text Label 6600 2650 0    50   ~ 0
+ESP_TX
+Text Label 6600 2750 0    50   ~ 0
+ESP_RX
+Wire Wire Line
+	6450 3300 6900 3300
+Wire Wire Line
+	6450 3400 6900 3400
+Wire Wire Line
+	6450 1950 6950 1950
+Wire Wire Line
+	6450 1850 6950 1850
+Text Label 6500 1950 0    50   ~ 0
+PWR_GND
+Text Label 6500 1850 0    50   ~ 0
+PWR_VCC
+Wire Wire Line
+	3150 2400 3650 2400
+Wire Wire Line
+	3150 2500 3650 2500
+Text Label 3200 2400 0    50   ~ 0
+PWR_VCC
+Text Label 3200 2500 0    50   ~ 0
+PWR_GND
+Wire Wire Line
+	4200 1550 4200 1500
+Wire Wire Line
+	4200 1500 4550 1500
+Text Label 4250 1500 0    50   ~ 0
+PWR_VCC
+Wire Wire Line
+	2850 1750 2400 1750
+Text Label 2450 1750 0    50   ~ 0
+PWR_VCC
+Wire Wire Line
+	4200 4350 4200 4400
+Wire Wire Line
+	4200 4400 4500 4400
+Text Label 4200 4400 0    50   ~ 0
+PWR_GND
+Text Label 6600 3300 0    50   ~ 0
+PWR_VCC
+Text Label 6600 3400 0    50   ~ 0
+PWR_GND
+$Comp
+L power:VCC #PWR03
+U 1 1 60DCE07D
+P 5300 4200
+F 0 "#PWR03" H 5300 4050 50  0001 C CNN
+F 1 "VCC" H 5315 4373 50  0000 C CNN
+F 2 "" H 5300 4200 50  0001 C CNN
+F 3 "" H 5300 4200 50  0001 C CNN
+	1    5300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 60DCE3AD
+P 5700 4200
+F 0 "#PWR04" H 5700 3950 50  0001 C CNN
+F 1 "GND" H 5705 4027 50  0000 C CNN
+F 2 "" H 5700 4200 50  0001 C CNN
+F 3 "" H 5700 4200 50  0001 C CNN
+	1    5700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 60DCEAFA
+P 5300 4200
+F 0 "#FLG01" H 5300 4275 50  0001 C CNN
+F 1 "PWR_FLAG" H 5300 4373 50  0000 C CNN
+F 2 "" H 5300 4200 50  0001 C CNN
+F 3 "~" H 5300 4200 50  0001 C CNN
+	1    5300 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 60DCFF86
+P 5700 4200
+F 0 "#FLG02" H 5700 4275 50  0001 C CNN
+F 1 "PWR_FLAG" H 5700 4373 50  0000 C CNN
+F 2 "" H 5700 4200 50  0001 C CNN
+F 3 "~" H 5700 4200 50  0001 C CNN
+	1    5700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 60DAED05
+P 6250 3300
+F 0 "J3" H 6550 3550 50  0000 C CNN
+F 1 "532610271(angled)" H 6600 3450 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal" H 6250 3300 50  0001 C CNN
+F 3 "~" H 6250 3300 50  0001 C CNN
+	1    6250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 60DAAAAA
+P 6250 2650
+F 0 "J2" H 6600 3000 50  0000 R CNN
+F 1 "532610471(angled)" H 7050 2900 50  0000 R CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53261-0471_1x04-1MP_P1.25mm_Horizontal" H 6250 2650 50  0001 C CNN
+F 3 "~" H 6250 2650 50  0001 C CNN
+	1    6250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60DFD199
+P 3000 1750
+F 0 "R1" V 2793 1750 50  0000 C CNN
+F 1 "10k" V 2884 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 1750 50  0001 C CNN
+F 3 "~" H 3000 1750 50  0001 C CNN
+	1    3000 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 1750 3150 1750
+Text Label 3250 1750 0    50   ~ 0
+ESP32_EN
+Wire Wire Line
+	4800 1750 5250 1750
+Text Label 6250 4900 0    50   ~ 0
+ESP32_EN
+Wire Wire Line
+	6600 4900 6150 4900
+Text Label 6250 4800 0    50   ~ 0
+ESP32_EN
+Wire Wire Line
+	6600 4800 6150 4800
+Text Label 8350 4900 0    50   ~ 0
+PWR_GND
+Wire Wire Line
+	8200 4900 8650 4900
+Text Label 8350 4800 0    50   ~ 0
+PWR_GND
+Wire Wire Line
+	8200 4800 8650 4800
+Text Label 8350 4050 0    50   ~ 0
+PWR_GND
+Wire Wire Line
+	8200 4050 8650 4050
+Text Label 8350 3950 0    50   ~ 0
+PWR_GND
+Wire Wire Line
+	8200 3950 8650 3950
+Text Label 6300 4050 0    50   ~ 0
+ESP_IO0
+Wire Wire Line
+	6150 4050 6600 4050
+$Comp
+L jgshin_KiCad_lib:PTS830GM140SMTRLFS U3
+U 1 1 60DBCCAD
+P 6600 4800
+F 0 "U3" H 7400 5187 60  0000 C CNN
+F 1 "PTS830GM140SMTRLFS" H 7400 5081 60  0000 C CNN
+F 2 "jgshin_KiCad_lib:PTS830GM140SMTRLFS_mod" H 7400 5040 60  0001 C CNN
+F 3 "" H 6600 4800 60  0000 C CNN
+	1    6600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L jgshin_KiCad_lib:PTS830GM140SMTRLFS U2
+U 1 1 60DBCCA7
+P 6600 3950
+F 0 "U2" H 7400 4337 60  0000 C CNN
+F 1 "PTS830GM140SMTRLFS" H 7400 4231 60  0000 C CNN
+F 2 "jgshin_KiCad_lib:PTS830GM140SMTRLFS_mod" H 7400 4190 60  0001 C CNN
+F 3 "" H 6600 3950 60  0000 C CNN
+	1    6600 3950
+	1    0    0    -1  
+$EndComp
+Text Label 6300 3950 0    50   ~ 0
+ESP_IO0
+Wire Wire Line
+	6150 3950 6600 3950
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 60DAEDC2
+P 6250 1950
+F 0 "J1" H 6600 2300 50  0000 R CNN
+F 1 "532610471(angled)" H 7050 2200 50  0000 R CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53261-0471_1x04-1MP_P1.25mm_Horizontal" H 6250 1950 50  0001 C CNN
+F 3 "~" H 6250 1950 50  0001 C CNN
+	1    6250 1950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
