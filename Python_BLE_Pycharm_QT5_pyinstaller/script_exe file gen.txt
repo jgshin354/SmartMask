@@ -17,4 +17,4 @@ pyinstaller -w --noconfirm --onedir --windowed  "C:/Users/jgshi/Documents/GitHub
 
 
 pyinstaller --onedir --console BLE_SPO2_Python_v7.py
-pyinstaller --onedir --noconsole BLE_SPO2_Python_v7.py
+pyinstaller --onedir --noconsole DGMIF_PPG_v0_1.py
