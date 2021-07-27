@@ -9,9 +9,11 @@ BLE_SPO2_DGMIF_20210617
 	- BLE + SPO2 operation code
 BLE_SPO2_DGMIF_20210623
 	- Adjusting PPG sampling rate/pulth width
+
 BLE_SPO2_DGMIF_20210712
 	- Temperature Sensing Added
-
+BLE_SPO2_DGMIF_20210714
+	- from 20210712 / bug fixed
 
 
 Python_BLE_Spyder
